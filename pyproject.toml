@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gogaku_dl"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Takushi Usami <takushi1969@gmail.com>"]
 readme = "README.md"

@@ -7,6 +7,8 @@ import re
 from urllib.parse import urljoin
 from random import randrange
 from time import sleep
+from datetime import datetime
+
 
 API_URL_HINT = 'ondemand_detail.js'
 MIN_SLEEP_SECONDS = 1
@@ -78,8 +80,20 @@ def _get_fiscal_year(onair_date, close_date):
         fiscal_year = onair_month - 1
 
     return fiscal_year
-    
-    
+
+
+def _get_length_in_sec(contents_id: str) -> int:
+    time_token = contents_id.split(';')[-1]
+    times = [x.replace('+09:00', '') for x in time_token.split('_')]
+
+    start_time = datetime.strptime(
+        times[0], '%Y-%m-%dT%H:%M:%S')
+    end_time = datetime.strptime(
+        times[1], '%Y-%m-%dT%H:%M:%S')
+
+    return (end_time - start_time).total_seconds()
+
+
 def get_program_hls(topurl, title):
     programs = get_program_details(topurl)
     if title not in programs:
@@ -104,6 +118,8 @@ def get_program_hls(topurl, title):
         program_hls['episodes'].append({
             datum['program_title']: {
                 'onair': datum['onair_date'],
+                'len_in_sec': _get_length_in_sec(
+                    datum['aa_contents_id']),
                 'hls': datum['stream_url']
             }})
 

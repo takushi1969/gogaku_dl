@@ -7,9 +7,11 @@ HLSのアドレスが入手できれば、
 [第48回『らじる★らじる』の聴き逃がしサービス（4）](https://gihyo.jp/article/2023/04/zoku-gansiki-0048?summary)を参照に
 コンテンツのダウンロードが可能となります。
 
-# 使用方法
+# API 
 
-## 「らじる★らじる」の英語番組のタイトル一覧の習得例
+## 使用方法
+
+### 「らじる★らじる」の英語番組のタイトル一覧の習得例
 
 ```python
 (nhk) taku@okisuke:~/study/nhk/gogaku_dl$ ipython
@@ -35,7 +37,7 @@ Out[2]:
 In [3]: 
 
 ```
-## 「らじる★らじる」の英語番組のHLSの取得例
+### 「らじる★らじる」の英語番組のHLSの取得例
 
 `get_english_hls`関数でHLSを取得することができます。
 `get_english_hls`の引数には、`get_program_titles`で取得したいずれかの値を指定します。
@@ -70,6 +72,16 @@ In [3]:
 
 
 ```
+
+# APIを使用した実装例
+
+「エンジョイン・シンプル・イングリシュ」をmp3にダウンロードする実装例
+を`examples/rec_enjoy_simple_english.py`として格納しました。
+
+実行例を以下に示します。
+
+![example](file:./images/example.mp4 "example")
+
 
 
 
