@@ -47,31 +47,35 @@ In [3]:
 「エンジョイ・シンンプル・イングリシュ」のHLSの取得例を示します。
 
 ```python
-(nhk) taku@okisuke:~/study/nhk/gogaku_dl$ ipython
+(nhk) taku@okisuke:~$ ipython
 Python 3.12.4 | packaged by conda-forge | (main, Jun 17 2024, 10:23:07) [GCC 12.3.0]
 Type 'copyright', 'credits' or 'license' for more information
 IPython 8.26.0 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: from gogaku_dl import english
 
-In [2]: english.get_english_hls('エンジョイ・シンプル・イングリッシュ')
+In [2]: english.get_hls('エンジョイ・シンプル・イングリッシュ')
 Out[2]: 
 {'title': 'エンジョイ・シンプル・イングリッシュ',
  'detail_url': 'https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=3064&corner_site_id=01',
- 'episodes': [{'エンジョイ・シンプル・イングリッシュ「箱根への道」': {'onair': '6月24日(月)午前9:10放送',
-    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_fee6e512960579b4ded0ba5db73d54ec/index.m3u8'}},
-  {'エンジョイ・シンプル・イングリッシュ「詰め放題＆腕相撲」': {'onair': '6月25日(火)午前9:10放送',
-    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_31d8db87f7b54acbd4cc746ef76f4297/index.m3u8'}},
-  {'エンジョイ・シンプル・イングリッシュ「通信カラオケ」': {'onair': '6月26日(水)午前9:10放送',
-    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_19af8a39defb5ea74ca89f2a6c4728e7/index.m3u8'}},
-  {'エンジョイ・シンプル・イングリッシュ「かにと母親」': {'onair': '6月27日(木)午前9:10放送',
-    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_1889cf1c4ab7913625f8eb972d9f41bf/index.m3u8'}},
-  {'エンジョイ・シンプル・イングリッシュ「あやしい旅行者－最終話－」': {'onair': '6月28日(金)午前9:10放送',
-    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_7231a97605445389cedfeed0c5aa3d2d/index.m3u8'}}],
+ 'episodes': [{'エンジョイ・シンプル・イングリッシュ「新紙幣」': {'onair': '7月1日(月)午前9:10放送',
+    'len_in_sec': 300.0,
+    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_b57b533405e7427dead106a78e09c354/index.m3u8'}},
+  {'エンジョイ・シンプル・イングリッシュ「梅雨＆ヒール・レスラー」': {'onair': '7月2日(火)午前9:10放送',
+    'len_in_sec': 300.0,
+    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_43db53cbce8796bae3123c2de51e3d8b/index.m3u8'}},
+  {'エンジョイ・シンプル・イングリッシュ「地雷除去機」': {'onair': '7月3日(水)午前9:10放送',
+    'len_in_sec': 300.0,
+    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_fc64d9225949641ef1fc938e6e47b1c2/index.m3u8'}},
+  {'エンジョイ・シンプル・イングリッシュ「アキレスけん」': {'onair': '7月4日(木)午前9:10放送',
+    'len_in_sec': 300.0,
+    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_c1755ef446f15b6c7548e5586b974a6f/index.m3u8'}},
+  {'エンジョイ・シンプル・イングリッシュ「女王の首飾り－第１話－」': {'onair': '7月5日(金)午前9:10放送',
+    'len_in_sec': 300.0,
+    'hls': 'https://vod-stream.nhk.jp/radioondemand/r/3064/s/stream_3064_840fbc6b0cb82e68b22c93ff5d60775b/index.m3u8'}}],
  'fiscal_year': 2024}
 
 In [3]: 
-
 
 ```
 
