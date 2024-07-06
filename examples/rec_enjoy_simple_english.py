@@ -29,7 +29,7 @@ def main(title: str) -> None:
                 .option('f', 'hls')
                 .input(info['hls'],
                        {"seg_max_retry": "100",
-                        "http_seekable": "1"})
+                        "http_seekable": "0"})
                 .output(
                     f'{title}.mp3',
                     {'codec:a': 'libmp3lame',
