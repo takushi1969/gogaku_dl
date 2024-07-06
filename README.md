@@ -80,7 +80,9 @@ In [3]:
 
 実行例を以下に示します。
 
-![example](file:./images/example.mp4 "example")
+https://github.com/takushi1969/gogaku_dl/assets/3589129/bf56750c-3b2b-47b7-a925-a9e1f15bce87
+
+
 
 
 
